@@ -23,16 +23,34 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.logo {
+    width: 30px;
+    height: 30px;
+}
+.logo_text{
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+       
+    color: #FFFFFF;
+}
 .menu{
+    margin-top: 10px;
     display: flex;
-    justify-content: center;
+    gap: 42px;
     }
 .menu_item{
-    margin-left: 42px;
+    list-style-type: none;
 }
-
-.menu_logo{
-   background: red;
+.menu_link{
+    font-family: 'Red Hat Text';    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+   
+    text-decoration: none;
 
 }
 .menu_btn{
