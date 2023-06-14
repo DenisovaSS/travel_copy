@@ -234,13 +234,20 @@ header {
   float: left;
   margin: -4px 17px 1px -12px;
 }
-
-.stories {
+.stories .title {
+  margin-top: 80px;
+}
+.stories_wrapper {
   min-height: 1320px;
-  padding: 80px 120px 102px 111px;
+  padding-bottom: 61px;
   background: url(../img/display/back_seconD.jpg) center center/cover;
+  position: relative;
   transform: translateY(61px);
   z-index: 1;
+}
+.stories_wrapper_white {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 120px 41px 111px;
 }
 
 .stories_article {
@@ -277,7 +284,6 @@ header {
 footer {
   position: relative;
   min-height: 61px;
-  background: #0d606f;
   display: flex;
   justify-content: space-around;
   align-items: center;
