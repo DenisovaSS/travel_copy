@@ -18,6 +18,10 @@ background-position: center calc(-1 * высота хедера);*/
   margin: 0;
   padding: 0;
 }
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 header {
   position: relative;
   padding: 25px 120px;
@@ -282,20 +286,33 @@ header {
   font-weight: bold;
 }
 footer {
+  padding: 13px 120px 13px 260px;
   position: relative;
   min-height: 61px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   z-index: 2;
 }
-.footer > div {
-  width: 33%;
+.footer > div:nth-child(1) {
+  order: 1;
+}
+
+.footer > div:nth-child(2) {
+  order: 5;
+}
+.footer > div:nth-child(3) {
+  order: 3;
 }
 .footer_article {
   font-family: "Red Hat Text";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   color: #ffffff;
+}
+
+.footer_img {
+  width: 33.65px;
+  height: 33.65px;
+  margin-left: 20px;
 }
