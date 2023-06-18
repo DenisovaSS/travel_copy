@@ -41,7 +41,6 @@ header {
 }
 .logo_text {
   font-family: "Magra";
-  font-style: normal;
   font-weight: 600;
   font-size: 32px;
   color: #ffffff;
@@ -89,8 +88,11 @@ header {
   color: #0d606f;
   background: #ffffff;
 }
+.humburger {
+  display: none;
+}
 .preview {
-  min-height: 955px;
+  min-height: 765px;
   padding-top: 122px;
   padding-left: 120px;
   background: url(../img/display/bacground_first.jpg) center center/cover
@@ -166,10 +168,8 @@ header {
   justify-content: space-between;
 }
 .steps_wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 317px;
+  text-align: center;
 }
 .steps_background_img {
   display: flex;
@@ -281,7 +281,7 @@ header {
   padding: 10px 120px 41px 111px;
 }
 
-.stories_article {
+.stories_block {
   display: flex;
   margin-top: 30px;
 }
@@ -303,6 +303,7 @@ header {
   color: #0d606f;
 }
 .article_main {
+  margin-top: 24px;
   font-family: "Aleo";
   font-weight: 400;
   font-size: 20px;
@@ -358,4 +359,193 @@ footer {
 .social_item:hover {
   background: #0b515c;
   border-radius: 20%;
+}
+@media (min-width: 700px) and (max-width: 900px) {
+  .container {
+    max-width: 900px;
+  }
+  header {
+    padding: 25px 50px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .logo_text {
+    display: none;
+  }
+  .menu {
+    margin-top: 5px;
+    gap: 22px;
+  }
+  .menu_link {
+    font-size: 14px;
+  }
+  .preview {
+    min-height: 665px;
+    padding-left: 50px;
+  }
+  .preview_title {
+    width: 90%;
+    font-size: 70px;
+  }
+  .preview_subtitle {
+    font-size: 15px;
+  }
+  .preview_search {
+    width: 80%;
+    height: 70px;
+  }
+  .preview_search::placeholder {
+    padding-left: 21px;
+    font-size: 18px;
+  }
+  .preview_btn {
+    padding: 8px 18px;
+    width: 178px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: -206px;
+  }
+  .steps {
+    padding: 0 50px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .steps_descr {
+    font-size: 15px;
+  }
+  .destinations_img {
+    width: 500px;
+    height: 500px;
+  }
+  .stories_wrapper_white {
+    padding: 10px 50px 41px 50px;
+  }
+  .stories_block {
+    margin-top: 20px;
+    align-items: center;
+  }
+  .aricle_img {
+    width: 300px;
+    height: 187.5px;
+  }
+  .article_stories {
+    margin-left: 20px;
+  }
+  .article_title {
+    font-size: 24px;
+  }
+  .article_main {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  footer {
+    padding: 13px 50px 13px 210px;
+  }
+}
+@media (min-width: 391px) and (max-width: 699px) {
+  .container {
+    max-width: 500px;
+  }
+}
+@media (max-width: 390px) {
+  .container {
+    max-width: 390px;
+  }
+  body {
+    position: relative;
+  }
+  header {
+    position: absolute;
+    width: 100%;
+    min-height: 75px;
+    padding: 43px 16px 0 16px;
+    background: none;
+    box-shadow: none;
+    display: block;
+  }
+  .logo_text {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .menu_btn {
+    display: none;
+  }
+  .logo_wraper {
+    position: relative;
+  }
+  .humburger {
+    margin-top: 8px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 35px;
+    height: 32px;
+  }
+  .humburger span {
+    display: block;
+    width: 26.25px;
+    height: 2.67px;
+    margin-bottom: 4px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .humburger_active span {
+    margin-bottom: -2px;
+  }
+  .humburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  .humburger_active span:nth-child(2) {
+    display: none;
+  }
+  .humburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  .preview {
+    padding: 142px 15px 61px 15px;
+    min-height: 251px;
+    transform: none;
+    background: linear-gradient(180deg, #0d606f 0%, rgba(13, 96, 111, 0) 25.1%),
+      url(../img/mobile/back_mobilef.jpg) center center/cover no-repeat;
+  }
+  .preview_title {
+    display: none;
+  }
+  .preview_subtitle {
+    display: none;
+  }
+  .preview_search {
+    margin-top: 0;
+    width: 360px;
+    height: 48px;
+  }
+  .preview_search::placeholder {
+    padding-left: 17px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .preview_btn {
+    padding: 0;
+    width: 92px;
+    height: 30px;
+    margin-left: 0;
+    font-size: 11px;
+  }
+  .steps {
+    padding: 0 15px;
+  }
+  .title {
+    font-size: 14px;
+  }
+
+  .steps_background_img {
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+  }
 }
