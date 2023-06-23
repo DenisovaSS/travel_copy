@@ -307,7 +307,6 @@ header {
 }
 .article_title {
   font-family: "Aleo";
-  font-style: normal;
   font-weight: 400;
   font-size: 35px;
   line-height: 42px;
@@ -670,9 +669,44 @@ footer {
     transform: translateY(65px);
   }
   .stories_wrapper_white {
-    padding: 10px 15px 13px 1px;
+    padding: 10px 15px 13px 15px;
   }
   .aricle_img {
     display: none;
+  }
+  .aricle_img_mobile {
+    display: block;
+    width: 155px;
+    height: 130px;
+    box-shadow: 0px 4px 4px #0d606f;
+    border-radius: 16px;
+  }
+  .article_stories {
+    margin-left: 10px;
+  }
+  .article_title {
+    color: #0d606f;
+    font-size: 11px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+  .article_main {
+    margin-top: 10px;
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .footer_article {
+    display: none;
+  }
+  footer {
+    min-height: 65px;
+    display: block;
+    padding: 0;
+  }
+  .footer_wrapper {
+    margin: 15px auto;
+  }
+  .footer_social {
+    justify-content: center;
   }
 }
